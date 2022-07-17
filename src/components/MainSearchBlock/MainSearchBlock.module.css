@@ -1,0 +1,41 @@
+.text {
+    text-align: center;
+    color: #FEFEFE;
+    font-style: normal;
+    width: 50%;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+}
+
+.subTitle {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    margin: 40px 0 80px 0;
+}
+
+.searchItems {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px auto 0;
+    padding: 15px 20px 15px 15px;
+    width: 520px;
+    min-height: 141px;
+    max-height: 335px;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.8);
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.searchItems::-webkit-scrollbar {
+    display: none;
+}

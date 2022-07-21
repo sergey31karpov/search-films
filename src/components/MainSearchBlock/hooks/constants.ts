@@ -1,5 +1,0 @@
-export const DEFAULT_PERIOD = 2000;
-
-export const DEFAULT_DELTA_PROCENT = 100;
-
-export const DEFAULT_DELTA_THEN_IS_EMPTY = 500;

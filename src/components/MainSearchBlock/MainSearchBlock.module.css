@@ -1,4 +1,4 @@
-.text {
+.container {
     text-align: center;
     color: #FEFEFE;
     font-style: normal;
@@ -19,6 +19,22 @@
     margin: 40px 0 80px 0;
 }
 
+.searchBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inputSearch {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.buttonSearch {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
 .searchItems {
     display: flex;
     justify-content: space-between;
@@ -31,9 +47,14 @@
     border-radius: 10px;
     background-color: rgba(17, 17, 17, 0.8);
     overflow-y: scroll;
+    transition: 0.5s;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.notSearchItems {
+    opacity: 0;
 }
 
 .searchItems::-webkit-scrollbar {

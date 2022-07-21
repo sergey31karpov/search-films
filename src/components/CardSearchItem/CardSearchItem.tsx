@@ -2,6 +2,7 @@ import React, {FC, useEffect} from "react";
 import {ICardSearchItem} from "./models";
 import {useLazyGetTitleQuery} from "../../store/api";
 import style from './CardSearchItem.module.css'
+import {Text} from "../common/text/text";
 
 export const CardSearchItem: FC<ICardSearchItem> = (props) => {
     const {id} = props
@@ -18,15 +19,32 @@ export const CardSearchItem: FC<ICardSearchItem> = (props) => {
                 <div className={style.description}>
                     <img src={data?.image} alt="poster" className={style.img}/>
                     <div className={style.text}>
-                        <h1 className={style.title}>
+                        <Text
+                            fontWeight={700}
+                            fontSize={24}
+                            lineHeight={29}
+                        >
                             {data?.title}
-                        </h1>
-                        <h2 className={style.titleType}>
+                        </Text>
+                        <Text
+                            fontWeight={400}
+                            fontSize={14}
+                            lineHeight={17}
+                            color="#FBFBFB"
+                            marginTop={12}
+                            marginBottom={30}
+                        >
                             {`${data?.type} | ${data?.genres} | ${data?.year}`}
-                        </h2>
-                        <h3 className={style.awards}>
+                        </Text>
+                        <Text
+                            fontWeight={400}
+                            fontSize={12}
+                            lineHeight={15}
+                            color="#FBFBFB"
+                            margin={0}
+                        >
                             {data?.awards}
-                        </h3>
+                        </Text>
                     </div>
                 </div>
                 {data?.imDbRating && <div className={style.rating}>

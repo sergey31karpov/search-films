@@ -7,6 +7,7 @@ import {useDebounce} from "./hooks/debounce";
 import {CardSearchItem} from "../CardSearchItem/CardSearchItem";
 import {Input} from "../common/Input/Input";
 import {Button} from "../common/Button/Button";
+import {Text} from "../common/text/text";
 
 export const MainSearchBlock: FC<IMainSearchBlock> = (props) => {
     const {className} = props
@@ -33,8 +34,22 @@ export const MainSearchBlock: FC<IMainSearchBlock> = (props) => {
 
     return (
         <div className={cn(style.container, className)}>
-            <h1 className={style.title}>Unlimited movies, TV shows, and more.</h1>
-            <h2 className={style.subTitle}>Watch anywhere. Cancel anytime.</h2>
+            <Text
+                fontWeight={900}
+                fontSize={64}
+                lineHeight={78}
+            >
+                Unlimited movies, TV shows, and more.
+            </Text>
+            <Text
+                fontWeight={500}
+                fontSize={36}
+                lineHeight={52}
+                marginTop={40}
+                marginBottom={80}
+            >
+                Watch anywhere. Cancel anytime.
+            </Text>
             <div className={style.searchBlock}>
                 <Input
                     className={style.inputSearch}

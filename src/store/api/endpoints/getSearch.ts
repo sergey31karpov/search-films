@@ -1,7 +1,7 @@
 import {IServerResponse} from "../models";
 
 export const getSearch = (search: string) => ({
-    url: `API/SearchAll/k_ciymgnj0/${search}`
+    url: `API/Search/k_ciymgnj0/${search}`
 })
 
 export const transformGetSearchResponse = (response: IServerResponse['search']) =>

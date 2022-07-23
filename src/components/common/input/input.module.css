@@ -1,0 +1,42 @@
+.input {
+    width: 434px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 14px 100px 14px 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.input.isBeforeIcon {
+    padding-left: 55px;
+}
+
+.input.light::placeholder {
+    color: #CCCCCC;
+}
+
+.input.dark::placeholder {
+    color: #5F5F5F;
+}
+
+.light {
+    color: #312E2E;
+    background-color: #FEFEFE;
+}
+
+.dark {
+    background-color: #1B1919;
+    color: #FEFEFE;
+}
+
+.beforeIcon {
+    position: relative;
+    margin-right: -20px;
+    left: 20px;
+    top: 5px;
+}

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.container:hover {
+    color: #FAC539;
+}
+
+.container:not(:first-child) {
+    margin-top: 10px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: 95px;
+    height: 141px;
+    border-radius: 8px;
+}
+
+.text {
+    width: 255px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.rating {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    border-radius: 8px;
+    background-color: #FAC539;
+    padding: 7px 12px 8px;
+    text-shadow: none;
+}

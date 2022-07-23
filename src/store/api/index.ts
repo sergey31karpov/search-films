@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/dist/query/react";
-import {getSearch, transformGetSearchResponse} from "./endpoints/getSearch";
+import {getSearch, transformGetSearchResponse} from "./endpoints/get-search";
 import {IServerResponse} from "./models";
-import {getTitle} from "./endpoints/getTitle";
+import {getTitle} from "./endpoints/get-title";
 
 
 export const api = createApi({
